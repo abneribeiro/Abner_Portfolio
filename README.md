@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Abner **Portfolio**
 
-## Getting Started
+## Welcome! 👋
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Overview](#overview)
+  - [Link](#link)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+
+## Overview
+
+### Link
+
+- Live Site URL: [Live site URL](https://abneribeiro.github.io/)
+
+## My process
+
+### Built with
+
+- Nextjs
+- React-icons
+- React-typewriter-simple
+
+### What I learned
+
+This is my first project with nextjs, and I learned a lot things.
+I had  some problems to make image fill available space without specifying height or width - `next/image`, but i discovered with a few lines of CSS you can get around this. Thus your images will fill all the available space in the div.
+```css
+.container_img {
+  width: 100%;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+  max-width: 100% !important;
+}
+
+.container_img > span{
+  position: unset !important;
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```js
+import React, { useState } from "react";
+function Navbar() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+  const closeMenu = () => {
+    setNavbarOpen(false);
+  };
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Continued development
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+I'll be updating the portfolio with other projects. I still needed to perfect my layout and maybe fix some bugs 💝
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
+- Instagram - [@ab_hiner](https://github.com/ab_hiner)
+- Twitter - [@AbhineRibeiro](https://twitter.com/AbhineRibeiro)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thanks for checking out this project.
