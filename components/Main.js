@@ -49,7 +49,7 @@ function Main() {
       <div id="project" className={styles.project_container}>
         <h1 className={styles.title}>What I've been working on </h1>
         <p className={styles.text}>I like to dedicate a part of my time in projects, which helps me to overcome my challenges, to learn from my mistakes and to implement what I learn.</p>
-        <p className={styles.text}>Yo can find source code of all projects on my <a href="https://github.com/abneribeiro">GitHub</a>. </p>
+        <p className={styles.text}><strong>I'll be updating with other projects.</strong> You can find source code of all projects on my <a href="https://github.com/abneribeiro">GitHub</a>. </p>
         <p className={styles.text}>Take a look at some my projects I've dedicated my time to.</p>
         <div className={styles.projects_section}>
             {cards}

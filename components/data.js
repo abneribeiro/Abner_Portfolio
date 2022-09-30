@@ -7,30 +7,7 @@ const data = [
         url:"https://abneribeiro.github.io/PageShop/",
         alt:"abshop",
     },
-    {
-        id: 2,
-        title: "Life Lessons with Katie Zaferes",
-        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.",
-        coverImg: "abshop.png",
-        url:"eq",
-        alt:"abshop",
-    },   
-    {
-        id: 3,
-        title: "Life Lessons with Katie Zaferes",
-        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.",
-        coverImg: "abshop.png",
-        url:"eq",
-        alt:"abshop",
-    },   
-     {
-        id: 4,
-        title: "Life Lessons with Katie Zaferes",
-        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.",
-        coverImg: "abshop.png",
-        url:"eq",
-        alt:"abshop",
-    }    
+      
 ]
 
 
