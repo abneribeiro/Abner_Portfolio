@@ -1,0 +1,96 @@
+.main_container {
+  max-width: 1024px;
+  margin: 0 auto 2.4rem auto;
+  padding: 0 2rem;
+}
+
+.main_container p a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size:1.5rem ;
+  }
+  .text {
+    font-size: 0.938rem;
+  }
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 60px 0 1.4rem 0;
+}
+
+.data_skill {
+  display: grid;
+  grid-template-areas:
+    "one two three"
+    "four five six";
+  gap: 1rem;
+  padding: 1.2rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 460px) {
+  .data_skill {
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+}
+.data_skill span:nth-child(1) {
+  grid-area: one;
+  max-width: 80%;
+}
+
+.data_skill span:nth-child(2) {
+  grid-area: two;
+  max-width: 80%;
+}
+
+.data_skill span:nth-child(3) {
+  grid-area: three;
+  max-width: 80%;
+}
+
+.data_skill span:nth-child(4) {
+  grid-area: four;
+  max-width: 80%;
+}
+
+.data_skill span:nth-child(5) {
+  grid-area: five;
+  max-width: 80%;
+}
+.data_skill span:nth-child(6) {
+  grid-area: six;
+  max-width: 80%;
+}
+
+div .about,
+.skills {
+  text-align: justify;
+}
+
+div .about p,
+.skills p {
+  line-height: 2;
+}
+
+.projects_section {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 4rem;
+}
+.project_container p {
+  line-height: 2;
+  margin-bottom: 1rem;
+}

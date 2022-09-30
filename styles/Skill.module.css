@@ -1,0 +1,10 @@
+.span{
+    padding: .7rem .4rem;
+    font-size: 1rem;
+    align-self: center;
+    transition: all ease .4s;
+}
+
+.span:hover{
+    color: var(--golden);
+}

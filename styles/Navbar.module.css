@@ -1,0 +1,78 @@
+.header {
+  box-shadow: 0px 2.98256px 7.464px rgba(48, 48, 48, 0.116);
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: hsla(0, 0%, 0%, 0.267);
+  backdrop-filter: blur(8px); 
+}
+h4.logo {
+  font-size: 1.6rem;
+  margin-right: auto;
+  color: gold;
+}
+
+.navBar{
+  height: 70px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  align-items: center;
+  padding: 0 1.4rem;
+}
+.navMenu{
+  display: flex;
+
+}
+.navMenu li a{
+  margin-left: 1.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.navMenu li a:hover {
+  color: gold;
+}
+.button{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  @keyframes menu {
+    0%   { top:-200px;}
+    50%  { top:0px;}
+    100% { top:60px;}
+  }
+  ul.showMenu{
+    top: 60px;
+    z-index: 10;
+    display: flex;
+    animation: menu;
+    animation-duration: .6s;
+    background-color: hsl(0, 0%, 4%);
+    
+
+  }
+  .navMenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -200px;
+    right: 0;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;  
+  }
+  .navMenu li {
+   margin-bottom: 2.2rem;
+  }
+
+  .button{
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+}
