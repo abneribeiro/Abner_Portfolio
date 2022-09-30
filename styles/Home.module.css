@@ -2,10 +2,10 @@
   height: 100vh;
   background-image: linear-gradient(
     124deg,
-    hsl(0, 0%, 8%),
-    50%,
+    hsl(0, 0%, 10%),
+    63%,
     hsl(0, 0%, 0%)
-  );
+  )
 }
 
 .home_container {
@@ -21,29 +21,6 @@
   color: hsl(0, 0%, 100%);
   grid-template-rows: 100%;
   grid-template-areas: "home home home home";
-}
-
-.title_home {
-  font-size: 2.3rem;
-}
-
-.bar_home {
-  position: relative;
-}
-.bar_home::after {
-  content: "";
-  width: 9px;
-  height: 17rem;
-  background: linear-gradient(hsl(49, 61%, 52%), hsl(49, 61%, 13%));
-  position: absolute;
-  border-radius: 4px;
-  left: -25px;
-  top: 8px;
-}
-@media screen and (min-width: 500px) {
-  .title_home {
-    font-size: 5.3rem;
-  }
 }
 
 .description {

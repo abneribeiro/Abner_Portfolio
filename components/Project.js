@@ -1,12 +1,13 @@
 import { FaArrowRight } from "react-icons/fa";
 import styles from "../styles/Project.module.css";
-
+import Image from 'next/image'
 
 function Project(props) {
   return (
     <div className={styles.container_project}>
-      <div className={styles.container_img}>
-        <img src={`./images/${props.coverImg}`} alt={props.alt} />
+      <div className="container_img">
+
+        <Image src={`/images/${props.coverImg}`} alt={props.alt} layout="fill" className="image"/>
       </div>
       <div className={styles.content_project}>
         <h2 className={styles.project_title}>{props.title}</h2>

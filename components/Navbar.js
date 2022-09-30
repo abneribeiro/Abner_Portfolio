@@ -1,4 +1,5 @@
-import styles from "../styles/Navbar.module.css";
+
+
 
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
@@ -14,10 +15,10 @@ function Navbar() {
   };
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.navBar}>
-        <h4 className={styles.logo}>.Ab</h4>
-        <button className={styles.button} onClick={handleToggle}>
+    <header className="header">
+      <nav className="navBar">
+        <h4 className="logo">.Ab</h4>
+        <button className="button" onClick={handleToggle}>
           {navbarOpen ? (
             <MdClose
               style={{ color: "#ffff", width: "30px", height: "30px" }}
@@ -26,9 +27,8 @@ function Navbar() {
             <FiMenu style={{ color: "#ffff", width: "30px", height: "30px" }} />
           )}
         </button>
-        {/* ${styles.navbarOpen ? ".showMenu" : ""} */}
-        
-         <ul className={`${styles.navMenu} ${styles.showMenu}`}>
+         
+         <ul className={`navMenu ${navbarOpen ? " showMenu" : ""}`}>
           <li onClick={() => closeMenu()}>
             <a href="#home">Home</a>
           </li>
