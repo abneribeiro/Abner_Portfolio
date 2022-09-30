@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Main from "../components/Main";
-import {Typewriter} from 'react-simple-typewriter';
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
@@ -9,7 +9,15 @@ export default function Home() {
       <section id="home" className={styles.section}>
         <Head>
           <title>AbneRibeiro</title>
-          <meta name="description" content="Introduction and summary of Abner Ribeiro projects. Web developer" />
+          <meta
+            name="description"
+            content="Introduction and summary of Abner Ribeiro projects. Web developer"
+          />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          ></meta>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.home_container}>
