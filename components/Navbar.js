@@ -12,12 +12,12 @@ function Navbar() {
   };
 
   const [colorchange, setColorchange] = useState(false)
-  const changeNavbarColor = () => {
-    (window.scrollY >= 1000) ? setColorchange(true) : setColorchange(false)
-    closeMenu()
-  }
+  
   React.useEffect(()=>{
-    window.addEventListener('scroll', changeNavbarColor)
+    window.addEventListener('scroll',function changeNavbarColor () {
+      (window.scrollY >= 1000) ? setColorchange(prev => prev =  true) : setColorchange(prev => prev =  false);
+      closeMenu()
+    })
   }, [])
   
   return (
