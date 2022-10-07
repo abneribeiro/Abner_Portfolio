@@ -28,7 +28,7 @@ export default function Home() {
                 <Typewriter
                   loop={2}
                   cursor
-                  cursorStyle=""
+                  cursorStyle="|"
                   typeSpeed={200}
                   deleteSpeed={100}
                   delaySpeed={1000}

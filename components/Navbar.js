@@ -1,12 +1,9 @@
-
-
-
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 
 import React, { useState } from "react";
 function Navbar() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);  
   const handleToggle = () => {
     setNavbarOpen(!navbarOpen);
   };
@@ -14,8 +11,16 @@ function Navbar() {
     setNavbarOpen(false);
   };
 
+  const [colorchange, setColorchange] = useState(false)
+  const changeNavbarColor = () => {
+    (window.scrollY >= 1000) ? setColorchange(true) : setColorchange(false)
+  }
+  React.useEffect(()=>{
+    window.addEventListener('scroll', changeNavbarColor)
+  }, [])
+  
   return (
-    <header className="header">
+    <header className={ colorchange ? ' header scroll_header' : 'header'}>
       <nav className="navBar">
         <h4 className="logo">.Ab</h4>
         <button className="button" onClick={handleToggle}>
@@ -27,8 +32,8 @@ function Navbar() {
             <FiMenu style={{ color: "#ffff", width: "30px", height: "30px" }} />
           )}
         </button>
-         
-         <ul className={`navMenu ${navbarOpen ? " showMenu" : ""}`}>
+
+        <ul className={`navMenu ${navbarOpen ? " showMenu" : ""}`}>
           <li onClick={() => closeMenu()}>
             <a href="#home">Home</a>
           </li>

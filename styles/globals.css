@@ -6,34 +6,31 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family:  Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
-:root{
-  --white:hsl(0deg 0% 100%);
-  --gray-200:hsl(0deg 0% 90%);
-  --golden:hsl(49, 61%, 52%);
+:root {
+  --white: hsl(0deg 0% 100%);
+  --gray-200: hsl(0deg 0% 90%);
+  --golden: hsl(49, 61%, 52%);
   --black: hsl(0deg 0% 3%);
- 
 }
 
-
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
-  background-color: hsl(20, 3%, 19%)
+  background-color: hsl(20, 3%, 19%);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--golden);
   border-radius: 50px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
-  background-color:var(--white);
+body {
+  background-color: var(--white);
   min-height: 100vh;
   width: 100%;
   color: var(--black);
@@ -42,13 +39,13 @@ body{
 h1,
 h2,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
@@ -64,7 +61,7 @@ a {
   position: fixed;
   z-index: 10;
   background-color: hsla(0, 0%, 0%, 0.267);
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
 }
 h4.logo {
   font-size: 1.6rem;
@@ -72,19 +69,18 @@ h4.logo {
   color: gold;
 }
 
-.navBar{
-  height: 70px;
+.navBar {
+  height: 50px;
   display: flex;
   margin: 0 auto;
   max-width: 1024px;
   align-items: center;
   padding: 0 1.4rem;
 }
-.navMenu{
+.navMenu {
   display: flex;
-
 }
-.navMenu li a{
+ul.navMenu li a {
   margin-left: 1.6rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -94,27 +90,32 @@ h4.logo {
 .navMenu li a:hover {
   color: gold;
 }
-.button{
+.button {
   display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   @keyframes menu {
-    0%   { top:-200px;}
-    50%  { top:0px;}
-    100% { top:60px;}
+    0% {
+      top: -200px;
+    }
+    50% {
+      top: 0px;
+    }
+    100% {
+      top: 60px;
+    }
   }
-  ul.showMenu{
-    top: 70px;
+  ul.showMenu {
+    top: 50px;
     z-index: 10;
     display: flex;
     animation: menu;
-    animation-duration: .6s;
-    background-color: hsla(0, 0%, 4%, 0.645);
+    animation-duration: 0.6s;
+    background-color: hsla(0, 0%, 0%, 0.968);
     
-
   }
-  .navMenu{
+  .navMenu {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -122,19 +123,32 @@ h4.logo {
     right: 0;
     width: 100%;
     padding: 2rem;
-    align-items: center;  
+    align-items: center;
   }
   .navMenu li {
-   margin-bottom: 2.2rem;
+    margin-bottom: 2.2rem;
   }
 
-  .button{
+  .button {
     display: block;
     background-color: transparent;
     border: none;
   }
 }
 
+.scroll_header {
+  background-color: hsla(0, 0%, 0%, 0.968);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: 0.8s all ease-in-out;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin: -50px 0 0;
+}
 
 .title_home {
   font-size: 2.3rem;
@@ -159,15 +173,15 @@ h4.logo {
   }
 
   .bar_home::after {
-  content: "";
-  width: 9px;
-  height: 17rem;
-  background: linear-gradient(hsl(49, 61%, 52%), hsl(49, 61%, 13%));
-  position: absolute;
-  border-radius: 4px;
-  left: -25px;
-  top: 8px;
-}
+    content: "";
+    width: 9px;
+    height: 17rem;
+    background: linear-gradient(hsl(49, 61%, 52%), hsl(49, 61%, 13%));
+    position: absolute;
+    border-radius: 4px;
+    left: -25px;
+    top: 8px;
+  }
 }
 
 .container_img {
@@ -182,6 +196,6 @@ h4.logo {
   max-width: 100% !important;
 }
 
-.container_img > span{
+.container_img > span {
   position: unset !important;
 }
