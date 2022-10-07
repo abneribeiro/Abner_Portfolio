@@ -26,7 +26,7 @@ export default function Home() {
             <h1 className="title_home bar_home">
               <span>
                 <Typewriter
-                  loop={2}
+                  loop={3}
                   cursor
                   cursorStyle="|"
                   typeSpeed={200}
