@@ -14,7 +14,7 @@ function Project(props) {
 
         <p className="project_description">{props.description}</p>
         
-          <a href={props.url} target="_blank" className={styles.link_project}>
+          <a href={props.url} rel="noreferrer" className={styles.link_project}>
             View Project <FaArrowRight className={styles.link_svg} />
             
           </a>

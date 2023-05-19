@@ -14,15 +14,15 @@ function Main() {
       <div className={styles.about} id="about">
         <h1 className={styles.title}>About</h1>
         <p className={styles.text}>
-          Hi there, I&apos;m Abner. <br /> Since I was a child, I&apos;ve always had a passion for music and technology. I learned to play musical instruments and became interested in programming at a young age. My first programming experience was when I was 14, diving into programming logic and later exploring Java. Years later, I decided to delve into JavaScript, which provided a completely different experience. I still remember the excitement of building my first "Hello World" program in JavaScript and witnessing my code come to life.
+          Hi there, I&apos;m Abner. <br /> Since I was a child, I&apos;ve always had a passion for music and technology. I learned to play musical instruments and became interested in programming at a young age. My first programming experience was when I was 14, diving into programming logic and later exploring Java. Years later, I decided to delve into JavaScript, which provided a completely different experience. I still remember the excitement of building my first &quot;Hello World&quot; program in JavaScript and witnessing my code come to life.
         </p>
         <p className={styles.text} >From that moment on, my journey in web development began. I became obsessed with honing my skills in this field. Learning HTML, CSS, and JavaScript became my primary focus, and I started building interactive websites and applications. Each completed project filled me with satisfaction and fueled my desire to explore further.</p>
-      <p className={styles.text} >However, my curiosity didn't stop there. I decided to expand my programming knowledge and venture into the realm of data analysis. That's when I delved into the world of Python. Learning Python opened up a new realm of possibilities for me. I started exploring data analysis libraries such as Pandas and NumPy, and discovered the magic of extracting valuable insights from data.</p>
+      <p className={styles.text} >However, my curiosity didn&apos;t stop there. I decided to expand my programming knowledge and venture into the realm of data analysis. That&apos;s when I delved into the world of Python. Learning Python opened up a new realm of possibilities for me. I started exploring data analysis libraries such as Pandas and NumPy, and discovered the magic of extracting valuable insights from data.</p>
 
-      <p className={styles.text} >Since then, I've been dedicated to improving my data analysis skills. I've learned about data visualization, statistical modeling, and machine learning. Each new data analysis project I undertake allows me to dive into a fascinating world, where I can explore patterns, identify insights, and make informed decisions based on data.</p>
+      <p className={styles.text} >Since then, I&apos;ve been dedicated to improving my data analysis skills. I&apos;ve learned about data visualization, statistical modeling, and machine learning. Each new data analysis project I undertake allows me to dive into a fascinating world, where I can explore patterns, identify insights, and make informed decisions based on data.</p>
 
 
-       <p className={styles.text}>This journey of combining my passion for music and technology has been incredibly rewarding. Every new challenge I face and every achievement I make inspires me to continue learning and growing as both a developer and a data analyst. I'm excited to see how I can further explore the intersection of music, technology, and data analysis to create unique and impactful experiences..</p>
+       <p className={styles.text}>This journey of combining my passion for music and technology has been incredibly rewarding. Every new challenge I face and every achievement I make inspires me to continue learning and growing as both a developer and a data analyst. I&apos;m excited to see how I can further explore the intersection of music, technology, and data analysis to create unique and impactful experiences..</p>
       </div>
       <div id="skills" className={styles.skills}>
         <h1 className={styles.title}>Expertise in Data Analysis</h1>
@@ -130,8 +130,8 @@ function Main() {
         <p className={styles.text}>I like to dedicate a part of my time in projects, which helps me to overcome my challenges, to learn from my mistakes and to implement what I learn.</p>
         <p className={styles.text}>Each project holds its own special charm, offering a glimpse into the fascinating world of data analysis. From unraveling customer behavior to predicting market trends, these projects showcase the magic that happens when numbers meet curiosity.</p>
         <p className={styles.text}>
-          But wait, there's more! For those eager to explore further, you can discover the intricate details and spells behind each project on GitHub. There, the enchantment continues as you dive into the realms of code and uncover the secrets behind the data transformations.</p>
-        <p className={styles.text}>So, join me on this extraordinary journey of exploration and wonder. Together, we'll unlock the power of data and unleash its captivating potential. Get ready to be enchanted by the spells of analysis and the stories that data whispers.</p>
+          But wait, there&apos;s more! For those eager to explore further, you can discover the intricate details and spells behind each project on GitHub. There, the enchantment continues as you dive into the realms of code and uncover the secrets behind the data transformations.</p>
+        <p className={styles.text}>So, join me on this extraordinary journey of exploration and wonder. Together, we&apos;ll unlock the power of data and unleash its captivating potential. Get ready to be enchanted by the spells of analysis and the stories that data whispers.</p>
         <p>Discover the magic. Unleash the insights. Welcome to the world of my data analysis projects!</p>
         <p className={styles.text}>Take a look at some my projects I&apos;ve dedicated my time to.</p>
         <div className={styles.projects_section}>
