@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import Main from "../components/Main";
 import { Typewriter } from "react-simple-typewriter";
-import ab from '../public/images/ab.png';
+
 
 export default function Home() {
   const [showCursor, setShowCursor] = useState(true);
@@ -25,7 +25,7 @@ export default function Home() {
             name="description"
             content="Discover actionable insights and unlock the full potential of your data with Data Analysis Hub. We provide cutting-edge tools and expertise to analyze, visualize, and interpret complex data sets."
           />
-          <meta property="og:image" content={ab} />
+          <meta property="og:image" content='/images/ab.png' />
           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
           <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
           <link rel="icon" href="/favicon.ico" />
