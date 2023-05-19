@@ -1,4 +1,4 @@
-.section{
+/*.section{
   height: 100vh;
   background-image: linear-gradient(
     124deg,
@@ -71,5 +71,120 @@
   .description {
     width: 100%;
     font-size: 1.144rem;
+  }
+}*/
+
+
+/*.section {
+  height: 100vh;
+  background-image: linear-gradient(124deg, hsl(0, 0%, 10%), 63%, hsl(0, 0%, 0%));
+}*/
+
+
+
+.section {
+  height: 100vh;
+  background: linear-gradient(135deg,
+      #060606 0%,
+      #0C0910 30%,
+      #0C0B11 50%,
+      #0F0D16 70%,
+      #120E1B 100%);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+.home_container {
+  display: grid;
+  height: calc(100vh - 60px);
+  position: relative;
+  top: 60px;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 2.3rem 2.4rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: hsl(0, 0%, 100%);
+  grid-template-rows: 100%;
+  grid-template-areas: "home home home home";
+}
+
+.description {
+  width: 73%;
+  margin-top: 1rem;
+  line-height: 1.6rem;
+  font-size: 1.184rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hi {
+  color: var(--golden);
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.touch_link {
+  font-weight: 700;
+  margin-top: 4rem;
+  padding: 1rem 1rem;
+  border-radius: 7px;
+  font-size: 1.14rem;
+  display: inline-block;
+  color: hsl(0, 0%, 92%);
+  border: 3px solid var(--golden);
+  background-color: var(--golden);
+  transition: all cubic-bezier(0, 0, 0.72, 0.23) 0.3s;
+}
+
+.touch_link:hover {
+  color: var(--golden);
+  background-color: transparent;
+}
+
+.home_content {
+  width: 100%;
+  grid-area: home;
+}
+
+@media screen and (max-width: 1024px) {
+  .home_container {
+    padding: 0 1.5rem 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home_container {
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .description {
+    font-size: 1rem;
   }
 }

@@ -1,9 +1,20 @@
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import Main from "../components/Main";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowCursor(false);
+    }, 5000); // Defina aqui o tempo em milissegundos para o cursor desaparecer (5 segundos no exemplo)
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <section id="home" className={styles.section}>
@@ -13,21 +24,18 @@ export default function Home() {
             name="description"
             content="Introduction and summary of Abner Ribeiro projects. Web developer"
           />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          ></meta>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
           <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.home_container}>
           <div className={styles.home_content}>
             <p className={styles.hi}>Hi, my name is</p>
-            <h1 className="title_home bar_home">
+            <h1 className="title_home">
               <span>
                 <Typewriter
                   loop={3}
-                  cursor
+                  cursor={showCursor} // Utiliza o estado showCursor para mostrar ou ocultar o cursor
                   cursorStyle="|"
                   typeSpeed={200}
                   deleteSpeed={100}
@@ -36,16 +44,12 @@ export default function Home() {
                 />
               </span>
             </h1>
-            <h1 className="title_home">Front End Developer</h1>
+            <h1 className="title_home">Data Analyst</h1>
             <p className={styles.description}>
-              I love building websites, improving my skills by learning from
-              more experienced people and sharing what I know.
+              Welcome to my data sanctuary, where numbers come alive and stories unfold. Join me on this captivating journey as we transform raw data into meaningful narratives, paving the way for a brighter future.
             </p>
 
-            <a
-              href="mailto:eliasabner38@gmail.com"
-              className={styles.touch_link}
-            >
+            <a href="mailto:eliasabner38@gmail.com" className={styles.touch_link}>
               Get In Touch
             </a>
           </div>
@@ -55,3 +59,4 @@ export default function Home() {
     </>
   );
 }
+

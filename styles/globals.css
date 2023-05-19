@@ -12,7 +12,7 @@ body {
 :root {
   --white: hsl(0deg 0% 100%);
   --gray-200: hsl(0deg 0% 90%);
-  --golden: hsl(49, 61%, 52%);
+  --golden: #EE3D49;
   --black: hsl(0deg 0% 3%);
 }
 
@@ -66,7 +66,7 @@ a {
 h4.logo {
   font-size: 1.6rem;
   margin-right: auto;
-  color: gold;
+  color: var(--golden);
 }
 
 .navBar {
@@ -79,6 +79,7 @@ h4.logo {
 }
 .navMenu {
   display: flex;
+  
 }
 ul.navMenu li a {
   margin-left: 1.6rem;
@@ -88,7 +89,7 @@ ul.navMenu li a {
   color: hsl(0, 0%, 100%);
 }
 .navMenu li a:hover {
-  color: gold;
+  color:var(--golden);
 }
 .button {
   display: none;
@@ -155,34 +156,9 @@ ul.navMenu li a {
 }
 
 
-
-.bar_home {
-  position: relative;
-}
-.bar_home::after {
-  content: "";
-  width: 9px;
-  height: 11.4rem;
-  background: linear-gradient(hsl(49, 61%, 52%), hsl(49, 61%, 13%));
-  position: absolute;
-  border-radius: 4px;
-  left: -25px;
-  top: 8px;
-}
 @media screen and (min-width: 500px) {
   .title_home {
     font-size: 5.3rem;
-  }
-
-  .bar_home::after {
-    content: "";
-    width: 9px;
-    height: 17rem;
-    background: linear-gradient(hsl(49, 61%, 52%), hsl(49, 61%, 13%));
-    position: absolute;
-    border-radius: 4px;
-    left: -25px;
-    top: 8px;
   }
 }
 
