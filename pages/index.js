@@ -27,7 +27,7 @@ export default function Home() {
           />
           <meta property="og:image" content='/images/ab.png' />
           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.home_container}>

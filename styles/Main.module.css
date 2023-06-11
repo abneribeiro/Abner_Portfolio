@@ -21,6 +21,7 @@
   font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
+  text-indent: 30px;
 }
 
 .title {
@@ -91,10 +92,11 @@
   max-width: 80%;
 }
 
-div .about,
-.skills {
+div .about .skill-description {
   text-align: justify;
+
 }
+
 
 div .about p
  {
