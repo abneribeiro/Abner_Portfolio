@@ -46,9 +46,9 @@ export default function Home() {
                 />
               </span>
             </h1>
-            <h1 className="title_home">Data Analyst</h1>
+            <h1 className="title_home">Frontend Developer</h1>
             <p className={styles.description}>
-              Welcome to my data sanctuary, where numbers come alive and stories unfold. Join me on this captivating journey as we transform raw data into meaningful narratives, paving the way for a brighter future.
+              Turning Vision into Experience: Frontend Developer Crafting Innovative and Functional Interfaces for the Digital World.
             </p>
 
             <a href="mailto:eliasabner38@gmail.com" className={styles.touch_link}>

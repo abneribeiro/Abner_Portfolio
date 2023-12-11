@@ -8,7 +8,7 @@ function Footer() {
       <div className={styles.footer_container}>
         <div className={styles.social_container}>
           <a
-            href="https://www.instagram.com/ab_hiner"
+            href="https://www.instagram.com/abneribeiro__"
             target="_blank"
             rel="noreferrer"
           >
@@ -22,7 +22,7 @@ function Footer() {
             <FaGithub className={styles.social_link} />
           </a>
           <a
-            href="https://twitter.com/AbhineRibeiro?s=08"
+            href="https://twitter.com/@abneribeiro_"
             target="_blank"
             rel="noreferrer"
           >
