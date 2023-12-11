@@ -21,7 +21,7 @@ body {
   background-color: hsl(20, 3%, 19%);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--golden);
+  background-color: #FF3F34;
   border-radius: 50px;
 }
 

@@ -48,7 +48,7 @@ export default function Home() {
             </h1>
             <h1 className="title_home">Frontend Developer</h1>
             <p className={styles.description}>
-              Turning Vision into Experience: Frontend Developer Crafting Innovative and Functional Interfaces for the Digital World.
+            Turning ideas into extraordinary digital experiences
             </p>
 
             <a href="mailto:eliasabner38@gmail.com" className={styles.touch_link}>

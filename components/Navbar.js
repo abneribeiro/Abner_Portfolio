@@ -44,9 +44,6 @@ function Navbar() {
           <li onClick={() => closeMenu()}>
             <a href="#skills">Skills</a>
           </li>
-          <li onClick={() => closeMenu()}>
-            <a href="#project">Project</a>
-          </li>
         </ul>
       </nav>
     </header>
