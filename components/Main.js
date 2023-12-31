@@ -1,9 +1,10 @@
+import { useDarkModeContext } from "../context/darkModeContext";
 import styles from "../styles/Main.module.css";
 
 function Main() {
-  
+  const { isDarkMode } = useDarkModeContext()
   return (
-    <div className={styles.main_container}>
+    <div className={styles.main_container} style={{ color: isDarkMode ? '#fff' : '#000' }}>
       <div className={styles.about} id="about">
         <h1 className={styles.title}>About Me</h1>
         <p className={styles.text}>
@@ -97,7 +98,7 @@ function Main() {
         }
 
         .section-title {
-          color: #333;
+          color: ${isDarkMode ? '#fff' : '#333' } ;
           font-size: 24px;
           margin-bottom: 40px;
         }
@@ -107,26 +108,26 @@ function Main() {
         }
 
         .skill-title {
-          color: #333;
+          color: ${isDarkMode ? '#fff' : '#333' };
           font-size: 20px;
           margin-bottom: 10px;
         }
 
         .skill-description {
-          color: #666;
+          color: ${isDarkMode ? '#fff' : '#666' };
           line-height: 1.6;
           text-align: justify;
         }
 
         .conclusion-title {
-          color: #333;
+          color: ${isDarkMode ? '#fff' : '#333' };
           font-size: 20px;
           margin-bottom: 10px;
           text-align: justify;
         }
 
         .conclusion-description {
-          color: #666;
+          color: ${isDarkMode ? '#fff' : '#666' };
           line-height: 1.6;
         }
       `}</style>

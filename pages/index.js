@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Main from "../components/Main";
 import { Typewriter } from "react-simple-typewriter";
 
-
 export default function Home() {
   const [showCursor, setShowCursor] = useState(true);
 
