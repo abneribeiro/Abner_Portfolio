@@ -1,8 +1,12 @@
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
+import { IoSunny } from "react-icons/io5";
+import { IoIosMoon } from "react-icons/io";
 
 import React, { useState } from "react";
+import { useDarkModeContext } from "../context/darkModeContext";
 function Navbar() {
+  const { isDarkMode, setIsDarkMode } = useDarkModeContext()
   const [navbarOpen, setNavbarOpen] = useState(false);  
   const handleToggle = () => {
     setNavbarOpen(!navbarOpen);
@@ -34,7 +38,7 @@ function Navbar() {
           )}
         </button>
 
-        <ul className={`navMenu ${navbarOpen ? " showMenu" : ""}`}>
+        <ul className={`navMenu ${navbarOpen ? "showMenu" : ""}`}>
           <li onClick={() => closeMenu()}>
             <a href="#home">Home</a>
           </li>
@@ -43,6 +47,12 @@ function Navbar() {
           </li>
           <li onClick={() => closeMenu()}>
             <a href="#skills">Skills</a>
+          </li>
+          <li onClick={() => closeMenu()} style={ { display: 'flex', alignItems: 'center', cursor: 'pointer', fontSize: '20px', marginLeft: '25px', color: '#fff' }}>
+            {isDarkMode ? 
+            <IoSunny onClick={() => setIsDarkMode(false)} />
+            : <IoIosMoon onClick={() => setIsDarkMode(true)} />
+            }
           </li>
         </ul>
       </nav>
