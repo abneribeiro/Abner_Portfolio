@@ -1,10 +1,8 @@
-import { useDarkModeContext } from "../context/darkModeContext";
 import styles from "../styles/Main.module.css";
 
 function Main() {
-  const { isDarkMode } = useDarkModeContext()
   return (
-    <div className={styles.main_container} style={{ color: isDarkMode ? '#fff' : '#000' }}>
+    <div className={styles.main_container}>
       <div className={styles.about} id="about">
         <h1 className={styles.title}>About Me</h1>
         <p className={styles.text}>
@@ -88,49 +86,6 @@ function Main() {
               These combined skills empower me to create modern and efficient web interfaces, providing users with an engaging and intuitive experience. I am always learning and staying abreast of the latest trends to remain updated in the dynamic world of frontend development.
             </p>
             </div>
-
-            <style jsx>{`
-        .container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding:0px 0px 20px 0px;
-         
-        }
-
-        .section-title {
-          color: ${isDarkMode ? '#fff' : '#333' } ;
-          font-size: 24px;
-          margin-bottom: 40px;
-        }
-
-        .skill {
-          margin-bottom: 40px;
-        }
-
-        .skill-title {
-          color: ${isDarkMode ? '#fff' : '#333' };
-          font-size: 20px;
-          margin-bottom: 10px;
-        }
-
-        .skill-description {
-          color: ${isDarkMode ? '#fff' : '#666' };
-          line-height: 1.6;
-          text-align: justify;
-        }
-
-        .conclusion-title {
-          color: ${isDarkMode ? '#fff' : '#333' };
-          font-size: 20px;
-          margin-bottom: 10px;
-          text-align: justify;
-        }
-
-        .conclusion-description {
-          color: ${isDarkMode ? '#fff' : '#666' };
-          line-height: 1.6;
-        }
-      `}</style>
           </div>
 
 

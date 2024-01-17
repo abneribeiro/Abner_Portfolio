@@ -20,7 +20,7 @@
   padding-bottom:1rem;
 }
 .social_container a {
-  color: hsl(0, 0%, 100%);
+  color: var(--white-color);
 }
 .social_container a:hover {
   color: var(--golden);

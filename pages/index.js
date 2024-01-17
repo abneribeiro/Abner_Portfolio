@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowCursor(false);
-    }, 5000); // Defina aqui o tempo em milissegundos para o cursor desaparecer (5 segundos no exemplo)
+    }, 5000); 
 
     return () => clearTimeout(timer);
   }, []);
