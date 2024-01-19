@@ -3,7 +3,7 @@
 }
 
 html,
-body {
+body {  
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -105,15 +105,29 @@ ul.navMenu li {
   padding: 1.125rem 1.875rem; /* 18px 30px */
   font-size: 1.2rem;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   color: hsl(0, 0%, 100%);
 }
 .navMenu li a:hover {
   color:var(--golden);
 }
 
+/* Estilos para telas menores que 600px */
+@media (max-width: 600px) {
+  ul.navMenu li {
+    font-size: .89rem;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+}
 
-
+/* Estilos para telas menores que 900px */
+@media (max-width: 900px) {
+  ul.navMenu li {
+    margin: 3px 0;
+    padding: .4rem .7rem;
+  }
+}
 
 :target::before {
   content: "";
