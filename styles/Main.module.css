@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 60px);
+  padding: 1.7rem 1.3rem;
+}
+
+.flexItem {
+  justify-self: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.content {
+text-align: center;
+}
+.content h1 {
+  font-size: 1.5rem;
+  margin-bottom: .3rem;
+}
+
+.content .lead {
+  font-size: 1rem;
+  margin-bottom: .3rem;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 0.875rem;
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animationContainer {
+  width: 50%;
+  height: auto;
+}
+.emailButton {
+    display: inline-block;
+    background-color: #0b8a6a;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .emailButton:hover {
+    background-color: #0a7a5e;
+  }
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .content {
+    text-align: start;
+    }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content .lead {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .flexItem {
+    width: 100%;
+  }
+
+  .animationContainer {
+    width: 100%;
+    height: auto;
+  }
+  .emailButton {
+    padding: 10px 20px;
+    font-size: 0.875rem;
+  }
+}

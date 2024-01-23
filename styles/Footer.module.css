@@ -1,10 +1,10 @@
 .footer {
   width: 100%;
   background-color: var(--black);
-  height: auto;
 }
 
 .footer_container {
+  height: 60px;
   padding: 1rem;
   display: flex;
   margin: 0 auto;
