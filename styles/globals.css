@@ -12,7 +12,7 @@ body {
 :root {
   
 
-  --golden: #EE3D49;
+  --green-color:  #0b8a6a;
   --black-color: #131313;
   --white-color: #ededed;
   --text-color: #bbbbbb;
@@ -23,7 +23,7 @@ body {
   background-color: hsl(20, 3%, 19%);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #FF3F34;
+  background-color: var(--green-color);
   border-radius: 50px;
 }
 
@@ -88,11 +88,11 @@ h4.logo {
 
 .scroll_navBar {
 
-  background: rgba(114, 114, 114, .2);
+  background: #72727233;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 10px #0000001a;
-
+  box-shadow:  -5px -5px 9px #22212186,
+             5px 5px 9px #6a676725;
 }
 .navMenu {
   display: flex;

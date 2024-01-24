@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -16,7 +16,7 @@
   margin-bottom: 15px;
 }
 .content {
-text-align: center;
+text-align: start;
 }
 .content h1 {
   font-size: 1.5rem;
@@ -42,22 +42,51 @@ text-align: center;
   width: 50%;
   height: auto;
 }
-.emailButton {
-    display: inline-block;
-    background-color: #0b8a6a;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 4px;
+
+    .emailButton {
     text-decoration: none;
-    font-size: 1rem;
+    display: inline-block;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .emailButton:hover {
-    background-color: #0a7a5e;
-  }
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #edeaea;
+    z-index: 1;
+    background:#0b8a6a;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow:  -1px -3px 11px #4effdc54, 7px 6px 20px #7edfcb33;
+    transition: all 250ms;
+    overflow: hidden;
+   }
+
+
+   
+   .emailButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .emailButton:hover {
+    color: #e8e8e8;
+   }
+   
+   .emailButton:hover::before {
+    width: 100%;
+   }
 
 @media (min-width: 768px) {
   .container {
