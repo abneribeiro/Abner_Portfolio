@@ -9,7 +9,7 @@ function Main() {
         <h1> I'm Abner</h1>
         <p className={styles.lead}>Backend Developer</p>
         <p>Seasoned backend developer crafting high-performance solutions with precision and a commitment to technical excellence.</p>
-        <a className={styles.emailButton} href="mailto:example@example.com">Get in touch</a>
+        <a className={styles.emailButton} href="eliasabner38@gmail.com">Get in touch</a>
       </div>
       <div className={`${styles.flexItem} ${styles.animation}`}>
         <Lottie className={styles.animationContainer} animationData={animation} />

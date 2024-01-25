@@ -1,37 +1,72 @@
 /* project.module.css */
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .project {
-    flex: 1 0 300px;
-    margin: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 300px;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .project:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .project img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .project a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .project p {
-    padding: 15px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.074);
+  flex: 1 0 300px;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+  text-align: center;
+}
+
+.project:hover {
+  box-shadow: 5px 5px 20px 1px #11ba902e;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.project p {
+  padding: 15px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
